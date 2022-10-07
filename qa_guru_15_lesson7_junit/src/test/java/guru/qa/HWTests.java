@@ -29,7 +29,7 @@ public class HWTests {
     @ValueSource(strings = {"Timeo Danaos et dona ferentes", "Para bellum"})
 
     @ParameterizedTest(name = "Search for article {0}  at ru.wikipedia.org")
-    void WikiSearchTest(String articles){
+    void wikiSearchTest(String articles){
         open("https://ru.wikipedia.org/wiki/");
         $("input[name='search']").setValue(articles).pressEnter();
         $$("li[class=\"mw-search-result\"]")
@@ -41,6 +41,6 @@ public class HWTests {
     @ParameterizedTest(name = "Search for production {0} at aramid.ru")
     void checkLocalesTest(Queries query){
         open("https://aramid.ru/ru/content/nasha-produkciya");
-        $$("div[class='prod-desc']").find(text(query.name())).shouldBe(visible);;
+        $$("div[class='prod-desc']").find(text(query.name())).shouldBe(visible);
     }
 }
