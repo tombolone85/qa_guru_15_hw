@@ -1,0 +1,17 @@
+{
+  "uid": "5678-3456-2345-7895",
+  "accType": "ruble",
+  "info": [
+    {
+      "accID": 78,
+      "accNum": "40817810400000006810",
+      "clientType": 1
+    },
+    {
+      "accID": 56,
+      "accNum": "40702810000000003304",
+      "clientType": 2
+    }
+  ],
+  "residence": true
+}
